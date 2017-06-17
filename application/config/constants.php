@@ -89,13 +89,13 @@ defined('EXIT__AUTO_MAX') OR define('EXIT__AUTO_MAX', 125); // highest automatic
 /*
   |--------------------------------------------------------------------------
   |*************************************************************************|
-  |********************************* DEF-COM *******************************|
+  |*********************************    AFI  *******************************|
   |*************************************************************************|
   |--------------------------------------------------------------------------
   |
  */
 
-define('DEFCOM_NAME', 'Def-Com');
+define('AFI_NAME', 'AFI');
 
 
 /*
@@ -107,11 +107,11 @@ define('DEFCOM_NAME', 'Def-Com');
 define('API_GCM_KEY', 'AIzaSyA-1_k3-SQmTHP4oiH3T86wt4t2iUsIG4o');
 //define('LOCALHOST', 'http://localhost:8012/');
 define('LOCALHOST', 'http://localhost/');
-define('URL_SERVER', LOCALHOST . 'Tactica/Desarrollo/PlataformasWeb/');
-define('DIR_SERVER', '/sapanesso/Applications/XAMPP/xamppfiles/htdocs/Tactica/Desarrollo/PlataformasWeb/');
-define('PROYECT_ROOT', URL_SERVER . 'com.tye.defcom.web/');
-define('EMAIL_USER', 'admin@def-com.com');
-define('EMAIL_USER_NAME', 'Admin Def-Com');
+define('URL_SERVER', LOCALHOST . 'AFI/Repo/');
+define('DIR_SERVER', '/sapanesso/Applications/XAMPP/xamppfiles/htdocs/AFI/Repo/');
+define('PROYECT_ROOT', URL_SERVER . 'com.afi.web.client/');
+define('EMAIL_USER', 'admin@afi.com');
+define('EMAIL_USER_NAME', 'Admin AFI');
 define('ENTERPRISE_FOLDERS', URL_SERVER . 'Enterprises/');
 define('ENTERPRISE_FOLDERS_WEB', URL_SERVER . 'Enterprises/');
 
@@ -122,18 +122,18 @@ define('ENTERPRISE_FOLDERS_WEB', URL_SERVER . 'Enterprises/');
   | VARIABLES
   |--------------------------------------------------------------------------
   |
- 
-define('API_GCM_KEY', 'AIzaSyA-1_k3-SQmTHP4oiH3T86wt4t2iUsIG4o');
-//define('LOCALHOST', 'http://localhost:8012/');
-define('LOCALHOST', 'http://localhost/');
-define('URL_SERVER', LOCALHOST . 'Tactica/Desarrollo/PlataformasWeb/');
-define('DIR_SERVER', 'C:/xampp/htdocs/Tactica/Desarrollo/PlataformasWeb/');
-define('PROYECT_ROOT', URL_SERVER . 'com.tye.defcom.web/');
-define('EMAIL_USER', 'admin@def-com.com');
-define('EMAIL_USER_NAME', 'Admin Def-Com');
-define('ENTERPRISE_FOLDERS', DIR_SERVER . 'Enterprises/');
-define('ENTERPRISE_FOLDERS_WEB', URL_SERVER . 'Enterprises/');
-*/
+
+  define('API_GCM_KEY', 'AIzaSyA-1_k3-SQmTHP4oiH3T86wt4t2iUsIG4o');
+  //define('LOCALHOST', 'http://localhost:8012/');
+  define('LOCALHOST', 'http://localhost/');
+  define('URL_SERVER', LOCALHOST . 'Tactica/Desarrollo/PlataformasWeb/');
+  define('DIR_SERVER', 'C:/xampp/htdocs/Tactica/Desarrollo/PlataformasWeb/');
+  define('PROYECT_ROOT', URL_SERVER . 'com.tye.defcom.web/');
+  define('EMAIL_USER', 'admin@def-com.com');
+  define('EMAIL_USER_NAME', 'Admin Def-Com');
+  define('ENTERPRISE_FOLDERS', DIR_SERVER . 'Enterprises/');
+  define('ENTERPRISE_FOLDERS_WEB', URL_SERVER . 'Enterprises/');
+ */
 /*
   |--------------------------------------------------------------------------
   | VARIABLES PRODUCCION
@@ -158,6 +158,7 @@ define('ENTERPRISE_FOLDERS_WEB', URL_SERVER . 'Enterprises/');
   |
  */
 
+define('LIB', PROYECT_ROOT . 'assets/lib/');
 define('IMG', PROYECT_ROOT . 'assets/img/');
 define('JS', PROYECT_ROOT . 'assets/js/');
 define('CSS', PROYECT_ROOT . 'assets/css/');

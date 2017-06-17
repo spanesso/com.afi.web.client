@@ -1,173 +1,168 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <title><?php echo DEFCOM_NAME; ?></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="your,keywords">
-        <meta name="Def-Com" content="">
-
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/bootstrap.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/materialadmin.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/font-awesome.min.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/material-design-iconic-font.min.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/wizard/wizard.css"; ?>" />
-
-
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/select2/select2.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/multi-select/multi-select.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/wizard/wizard.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/bootstrap-datepicker/datepicker3.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/toastr/toastr.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/DataTables/jquery.dataTables.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/DataTables/extensions/dataTables.colVis.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/DataTables/extensions/dataTables.tableTools.css"; ?>" />
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/typeahead/typeahead.css"; ?>" />
-
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "theme-default/libs/dropzone/dropzone-theme.css"; ?>" />
-
-        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "def-com/general.css"; ?>" />
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "description" content = "">
+        <meta name = "author" content = "">
+        <link rel = "shortcut icon" href = "assets/img/logo-fav.png">
+        <title>AFI</title>
+        <link type = "text/css" rel = "stylesheet" href = "<?php echo LIB . "perfect-scrollbar/css/perfect-scrollbar.min.css"; ?>" />
+        <link type = "text/css" rel = "stylesheet" href = "<?php echo LIB . "material-design-icons/css/material-design-iconic-font.min.css"; ?>" />
         <!--[if lt IE 9]>
-        <script type="text/javascript" src="<?php echo JS . "libs/utils/html5shiv.js"; ?>"></script>
-        <script type="text/javascript" src="<?php echo JS . "libs/utils/respond.min.js"; ?>"></script>
+        <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
-        <?php
-        if ($style != null) {
-            echo " <link type='text/css' rel='stylesheet' href='" . CSS . "def-com/" . $style . ".css' />";
-        }
-        ?>
-
-        <script src="<?php echo JS . "def-com/constants.js"; ?>"></script>
-
-
+        <link type="text/css" rel="stylesheet" href="<?php echo LIB . "jquery.vectormap/jquery-jvectormap-1.2.2.css"; ?>" />
+        <link type="text/css" rel="stylesheet" href="<?php echo LIB . "jqvmap/jqvmap.min.css"; ?>" />
+        <link type="text/css" rel="stylesheet" href="<?php echo LIB . "datetimepicker/css/bootstrap-datetimepicker.min.css"; ?>" />
+        <link type="text/css" rel="stylesheet" href="<?php echo CSS . "style.css"; ?>" />
     </head>
-    <body class="menubar-hoverable header-fixed  gray-def-com-back">
-        <header id="header" >
-            <div class="headerbar">
-                <div class="headerbar-left">
-                    <ul class="header-nav header-nav-options">
-                        <li class="header-nav-brand" >
-                            <div class="brand-holder">
-                                <a href="../../html/dashboards/dashboard.html">
-                                    <span class="text-lg text-bold text-primary"><?php echo DEFCOM_NAME; ?></span>
+    <body>
+        <div class="be-wrapper be-fixed-sidebar">
+            <nav class="navbar navbar-default navbar-fixed-top be-top-header">
+                <div class="container-fluid">
+                    <div class="navbar-header"><a href="index.html" class="navbar-brand"></a>
+                    </div>
+                    <div class="be-right-navbar">
+                        <ul class="nav navbar-nav navbar-right be-user-nav">
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="assets/img/avatar.png" alt="Avatar"><span class="user-name">Túpac Amaru</span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li>
+                                        <div class="user-info">
+                                            <div class="user-name">Túpac Amaru</div>
+                                            <div class="user-position online">Available</div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"><span class="icon mdi mdi-face"></span> Account</a></li>
+                                    <li><a href="#"><span class="icon mdi mdi-settings"></span> Settings</a></li>
+                                    <li><a href="#"><span class="icon mdi mdi-power"></span> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="page-title"><span>Dashboard</span></div>
+                        <ul class="nav navbar-nav navbar-right be-icons-nav">
+                            <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+                                <ul class="dropdown-menu be-notifications">
+                                    <li>
+                                        <div class="title">Notifications<span class="badge">3</span></div>
+                                        <div class="list">
+                                            <div class="be-scroller">
+                                                <div class="content">
+                                                    <ul>
+                                                        <li class="notification notification-unread"><a href="#">
+                                                                <div class="image">
+                                                                    <img src="<?php echo IMG . "avatar2.png"; ?>" alt="Avatar">
+                                                                </div>
+                                                                <div class="notification-info">
+                                                                    <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div><span class="date">2 min ago</span>
+                                                                </div></a></li>
+                                                        <li class="notification"><a href="#">
+                                                                <div class="image"><img src="<?php echo IMG . "avatar3.png"; ?>" alt="Avatar"></div>
+                                                                <div class="notification-info">
+                                                                    <div class="text"><span class="user-name">Joel King</span> is now following you</div><span class="date">2 days ago</span>
+                                                                </div></a></li>
+                                                        <li class="notification"><a href="#">
+                                                                <div class="image"><img src="<?php echo IMG . "avatar4.png"; ?>" alt="Avatar"></div>
+                                                                <div class="notification-info">
+                                                                    <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div><span class="date">2 days ago</span>
+                                                                </div></a></li>
+                                                        <li class="notification"><a href="#">
+                                                                <div class="image">
+                                                                    <img src="<?php echo IMG . "avatar5.png"; ?>" alt="Avatar"></div>
+                                                                <div class="notification-info"><span class="text"><span class="user-name">Emily Carter</span> is now following you</span><span class="date">5 days ago</span></div></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer"> <a href="#">View all notifications</a></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                                    <span class="icon mdi mdi-apps"></span>
                                 </a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                                <ul class="dropdown-menu be-connections">
+                                    <li>
+                                        <div class="list">
+                                            <div class="content">
+                                                <div class="row">
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "github.png"; ?>" alt="Github">
 
-            </div>
-        </header>
-        <div id="base">
-            <div class="offcanvas">
-            </div>
-            <?php
-            echo $body;
-            echo $menu;
-            ?>
-        </div>
-
-
-
-
-        <div class="modal fade" id="charge_data_general_modal" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="charge_data_general_modal_dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img src="<?php echo IMG . "def-com/spinner.gif" ?>" class="spinner-icon">
-                        <p class="align-center modal_message" id="charge_modal_message"></p>
+                                                            <span>GitHub</span></a></div>
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "bitbucket.png"; ?>" alt="Bitbucket"> 
+                                                            <span>Bitbucket</span>
+                                                        </a></div>
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "slack.png"; ?>" alt="Slack"> 
+                                                            <span>Slack</span></a></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "Dribbble.png"; ?>" alt="Dribbble"><span>Dribbble</span></a></div>
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "mail_chimp.png"; ?>" alt="Mail Chimp"><span>Mail Chimp</span></a></div>
+                                                    <div class="col-xs-4"><a href="#" class="connection-item">
+                                                            <img src="<?php echo IMG . "dropbox.png"; ?>" alt="Dropbox"><span>Dropbox</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer"> <a href="#">More</a></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-
+                </div>
+            </nav>
+            <div class="be-left-sidebar">
+                <div class="left-sidebar-wrapper">
+                    <a href="#" class="left-sidebar-toggle">AFI</a>
+                    <?php
+                    //LEFT SIDE MENU
+                    echo $menu;
+                    ?>
                 </div>
             </div>
-        </div>
-
-        <div class="modal fade" id="loading_data_general_modal" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="charge_data_general_modal_dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-
-                        <p class="align-center modal_message" id="charge_modal_message">Cargando datos un momento por favor.</p>
-                    </div>
-
-                </div>
+            <div class="be-content">
+                <?php
+                //MAIN CONTAINER BODY
+                echo $body;
+                ?>
             </div>
         </div>
+        <script src="<?php echo LIB . "jquery/jquery.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo JS . "main.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "bootstrap/dist/js/bootstrap.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-flot/jquery.flot.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-flot/jquery.flot.pie.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-flot/jquery.flot.resize.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-flot/plugins/jquery.flot.orderBars.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-flot/plugins/curvedLines.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery.sparkline/jquery.sparkline.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "countup/countUp.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jquery-ui/jquery-ui.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jqvmap/jquery.vmap.min.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo LIB . "jqvmap/maps/jquery.vmap.world.js"; ?>" type="text/javascript"></script>
+        <script src="<?php echo JS . "app-dashboard.js"; ?>" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //initialize the javascript
+                App.init();
+                App.dashboard();
 
-        <div class="modal fade" id="success_action_modal" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="charge_data_general_modal_dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <i class="fa fa-check-circle-o modal_custom_icon icon-success "></i>
-                        <p class="align-center modal_message" id="success_modal_message"></p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="warning_action_modal" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="charge_data_general_modal_dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <i class="fa fa-check-circle-o modal_custom_icon icon-warning "></i>
-                        <p class="align-center modal_message" id="warning_modal_message"></p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="error_action_modal" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="charge_data_general_modal_dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <i class="fa fa-times-circle-o modal_custom_icon icon-error "></i>
-                        <p class="align-center modal_message" id="error_modal_message"></p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <script src="<?php echo JS . "libs/jquery/jquery-1.11.2.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/jquery/jquery-migrate-1.2.1.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/jquery-ui/jquery-ui.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/bootstrap/bootstrap.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/spin.js/spin.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/wizard/jquery.bootstrap.wizard.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/autosize/jquery.autosize.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/DataTables/jquery.dataTables.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/DataTables/extensions/ColVis/js/dataTables.colVis.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/nanoscroller/jquery.nanoscroller.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/wizard/jquery.bootstrap.wizard.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/bootstrap-datepicker/bootstrap-datepicker.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/inputmask/jquery.inputmask.bundle.min.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/toastr/toastr.js"; ?>"></script>
-        <script src="<?php echo JS . "libs/dropzone/dropzone.min.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/App.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppNavigation.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppOffcanvas.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppCard.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppForm.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppNavSearch.js"; ?>"></script>
-        <script src="<?php echo JS . "core/source/AppVendor.js"; ?>"></script>
-        <script src="<?php echo JS . "core/demo/Demo.js"; ?>"></script>
-        <script src="<?php echo JS . "core/demo/DemoFormWizard.js"; ?>"></script>
-        <script src="<?php echo JS . "def-com/base.js"; ?>"></script>
+            });
+        </script>
         <?php
         if ($script != null) {
-            echo "<script src='" . JS . "def-com/" . $script . ".js'></script>";
+            echo "<script src='" . LIB . "afi/" . $script . ".js'></script>";
         }
         ?>
     </body>
